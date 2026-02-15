@@ -1,0 +1,20 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="flex flex-col items-center">
+    <strong class="text-4xl my-2">Demo Reel</strong>
+
+    <h3 class="my-4"><em>
+        <p>Commercial, narration, character work, and more.</p>
+
+        <p>Take a listen to what I can bring to your project.</p>
+    </em></h3>
+</div>
+<c-demos.audio-player 
+    media_path="{{ MEDIA_URL }}/audio/Podcast Intro Narration - Sponsor Read.mp3"
+>
+    </c-demos.audio-player>
+
+{% endblock %}
