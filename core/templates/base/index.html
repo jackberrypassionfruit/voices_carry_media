@@ -1,5 +1,25 @@
 {% extends 'base/base.html' %}
+{% load static %}
 
 {% block content %}
-  <p>Hi Mom!</p>
+  <div class="flex flex-row">
+    <div class="flex flex-col items-center" >
+        <h1 class="text-6xl py-10 w-[65%] text-center">Professional Voice Over
+        for Every Story
+        </h1>
+        <h3 class="text-4xl py-5">
+          <em>
+            <p>Fast turnaround.</p>
+            <p>Professional quality.</p>
+            <p>Your message, delivered perfectly.</p>
+          </em>
+        </h3>
+        <c-demos.audio-player media_filename="Introducing Voices Carry Media.mp3"/>
+    </div>
+    <img 
+      src="{% static 'img/dp_headshot.jpeg' %}" 
+      alt="headshot of yours truly"
+      class="w-1/4 h-1/4 m-4 bg-gradient-to-l shadow-2xl shadow-purple-600/30"
+    >
+  </div>
 {% endblock %}

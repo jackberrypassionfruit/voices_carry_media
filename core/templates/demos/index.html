@@ -12,9 +12,36 @@
         <p>Take a listen to what I can bring to your project.</p>
     </em></h3>
 </div>
-<c-demos.audio-player 
-    media_path="{{ MEDIA_URL }}/audio/Podcast Intro Narration - Sponsor Read.mp3"
->
-    </c-demos.audio-player>
+
+<div class="flex flex-row justify-around">
+    <div class="flex flex-col">
+        <c-demos.audio-player media_filename="Audiobook Demo - Fiction.mp3"/>
+        <c-demos.audio-player media_filename="Audiobook Demo - Non-Fiction.mp3"/>
+        <c-demos.audio-player media_filename="Corporate Presentation - Executive Overview.mp3"/>
+        <c-demos.audio-player media_filename="Corporate Presentation - Investor Stakeholder.mp3"/>
+        <c-demos.audio-player media_filename="Corporate Presentation - Product Explainer.mp3"/>
+        <c-demos.audio-player media_filename="Corporate Presentation - Training Internal.mp3"/>
+    </div>
+    
+    <div class="flex flex-col">
+        <c-demos.audio-player media_filename="Commercial Radio Ads - Confident Brand.mp3"/>
+        <c-demos.audio-player media_filename="Commercial Radio Ads - Conversational Local.mp3"/>
+        <c-demos.audio-player media_filename="Commercial Radio Ads - High Energy Promo.mp3"/>
+        <c-demos.audio-player media_filename="Commercial Radio Ads - Tech Modern.mp3"/>
+        <c-demos.audio-player media_filename="E-Learning Training - Compliance.mp3"/>
+        <c-demos.audio-player media_filename="E-Learning Training - Instructional.mp3"/>
+    </div>
+    <div class="flex flex-col">
+        <c-demos.audio-player media_filename="Character Narrative - Skeptical Narrator.mp3"/>
+        <c-demos.audio-player media_filename="Character Narrative - Warm Older Voice.mp3"/>
+        <c-demos.audio-player media_filename="Introducing Voices Carry Media.mp3"/>
+        <c-demos.audio-player media_filename="Podcast Intro Narration - Close Call-to-Action.mp3"/>
+        <c-demos.audio-player media_filename="Podcast Intro Narration - Mid-Roll Transition.mp3"/>
+        <c-demos.audio-player media_filename="Podcast Intro Narration - Show Open.mp3"/>
+        <c-demos.audio-player media_filename="Podcast Intro Narration - Sponsor Read.mp3"/>
+    </div>
+</div>
 
 {% endblock %}
+
+

@@ -1,9 +1,19 @@
-<div class="audio-player flex flex-row align-center">
-    <audio controls>
-        <source src="{{ media_path }}">
-        Your browser does not support the audio element.
+<div class="audio-player m-4 flex flex-col items-center">
+  <h2 class="text-center p-2">{{ media_filename }}</h2>
+  <span class="flex flex-row">
+    <audio class="px-4 w-80" controls>
+      <source src="{{ MEDIA_URL }}audio/{{ media_filename }}" />
+      Your browser does not support the audio element.
     </audio>
-    <a href="{{ media_path }}" download>
-        <button class="btn ">Download</button>
+    <a
+      href="{{ MEDIA_URL }}audio/{{ media_filename }}"
+      download
+    >
+      <button
+        class="btn btn-primary"
+      >
+        Download
+      </button>
     </a>
+  </span>
 </div>
