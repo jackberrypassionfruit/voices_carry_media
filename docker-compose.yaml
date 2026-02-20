@@ -1,0 +1,15 @@
+services:
+  dads_voiceover_website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dads_voiceover_website
+    restart: unless-stopped
+    volumes:
+      - .:/app
+    ports:
+      - "8003:8000"
+    # command: '/bin/sh -c "sleep 0; uv run manage.py runserver 0.0.0.0:8000"'
+
+volumes:
+  venv:
